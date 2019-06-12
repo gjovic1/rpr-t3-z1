@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal03.ImenikController">
-   <children>
-      <TableView layoutY="-1.0" prefHeight="331.0" prefWidth="877.0" tableMenuButtonVisible="true">
-        <columns>
-          <TableColumn prefWidth="100.0" text="Ime" />
-          <TableColumn prefWidth="100.0" text="Prezime" />
-          <TableColumn prefWidth="300.0" text="Broj" />
-        </columns>
-      </TableView>
-   </children>
-</Pane>
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="841.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Dodaj u imenik">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightblue;" />
+      </content>
+    </Tab>
+    <Tab text="Izmjena imenika">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" />
+      </content>
+    </Tab>
+      <Tab text="Brisanje iz imenika">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: darkred;" />
+         </content>
+      </Tab>
+      <Tab text="Pretraga imenika">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightcyan;" />
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
